@@ -1,0 +1,133 @@
+// COLORS //
+$color-black: #191919;
+$color-mint-green: #c0e8dd;
+$color-pink: #f6d9ea;
+$color-lavendar: #d29fbb;
+$color-lite-grey: #f3f3f3;
+$color-lite-blue: #bddce3;
+
+// FONTS //
+$font-display: 'Nunito', sans-serif;
+$font-serif: 'PT Serif', serif;
+
+// GRID //
+$grid-columns: 12 !default;
+$grid-gutter-width: 20px !default;
+
+// MAIN BODY ELEMENTS //
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    color: $color-black;
+    font-family: $font-serif;
+}
+
+header {
+    padding: 2rem 6rem;
+    align-content: auto;
+}
+
+main.main-wrapper {
+    margin: 0 6rem;
+    align-content: auto;
+}
+
+// BUTTONS //
+
+// NAV //
+.navbar {
+    align-items: baseline;
+    line-height: 2rem;
+    align-content: center;
+    width: 100%;
+}
+
+a.nav-link {
+    color: $color-black !important;
+    font-family: $font-display;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: 0 .5rem;
+}
+
+nav a.nav-link.active {
+    color: $color-pink !important;
+}
+
+nav a.nav-link#brand {
+    font-family: $font-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -.025rem;
+    text-align: center;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+}
+
+
+// HEADINGS //
+h1.display-4 {
+    font-family: $font-display;
+    font-weight: 400; 
+    color: white;
+    line-height: 3rem;
+    letter-spacing:.1rem;
+    text-transform: uppercase;
+}
+
+h1.display-4-serif {
+    font-family: $font-serif;
+    color: white;
+    letter-spacing: .2rem;
+}
+
+h2.section-heds {
+    font-family: $font-display;
+}
+
+h3.product-details {
+    font-family: $font-display;
+    font-weight: 300; 
+    color: $color-black;
+    line-height: 1.6rem;
+    letter-spacing: .2rem;
+}
+
+h3 span {
+    font-family: $font-display;
+    font-weight: 400; 
+    color: $color-black;
+}
+
+h6.kicker {
+    font-family: $font-display;
+    font-weight: 300;
+    font-size: .8rem; 
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+// SECTION ELEMENTS //
+section.section-wrapper {
+    background-color: $color-lite-grey;
+    padding: 3rem;  
+}
+
+// FOOTER //
+footer {
+    background-color: $color-pink;
+    padding: 4rem 6rem;
+    margin-top: .3rem;
+    font-size: .75rem;
+}
+
+ul.footer-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+div.copyright-footer {
+    margin-top: 2rem;
+}
