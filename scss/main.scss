@@ -21,6 +21,7 @@ body {
     line-height: 1.6rem;
     color: $color-black;
     font-family: $font-serif;
+    font-size: .8rem;
 }
 
 header {
@@ -53,33 +54,44 @@ a.nav-link {
 
 nav a.nav-link.active {
     color: $color-pink !important;
+    font-weight: 700;
 }
 
 nav a.nav-link#brand {
     font-family: $font-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -.025rem;
     text-align: center;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 
 // HEADINGS //
-h1.display-4 {
+
+h1 {
     font-family: $font-display;
     font-weight: 400; 
-    color: white;
-    line-height: 3rem;
-    letter-spacing:.1rem;
+    font-size: 1.6rem;
+    color: $color-black;
+    letter-spacing: .05rem;
     text-transform: uppercase;
 }
 
-h1.display-4-serif {
+h1.display-4 {
+    font-family: $font-display;
+    font-weight: 400; 
+    font-size: 3rem;
+    color: white;
+    
+}
+
+h1.display-4 span {
     font-family: $font-serif;
     color: white;
-    letter-spacing: .2rem;
+    font-size: 3rem;
+    
 }
 
 h2.section-heds {
@@ -100,6 +112,14 @@ h3 span {
     color: $color-black;
 }
 
+h5 {
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: .9rem; 
+    text-transform: uppercase;
+    // padding-bottom: 1rem;
+}
+
 h6.kicker {
     font-family: $font-display;
     font-weight: 300;
@@ -109,10 +129,105 @@ h6.kicker {
 }
 
 // SECTION ELEMENTS //
-section.section-wrapper {
+section.section-wrapper-grey {
     background-color: $color-lite-grey;
     padding: 3rem;  
+    text-align: center;
 }
+
+section.section-wrapper-white {
+    background-color: white;
+    padding: 5rem 6rem 3rem 6rem;  
+    text-align: center;
+    line-height: 3rem;
+}
+
+// JUMBOTRON ELEMENTS //
+.main-carousel {
+    background-color: $color-lite-grey;
+    z-index: 0;
+}
+
+div.jumbotron-textbox{
+    width: 35%;
+    position: absolute;
+    top: 12rem;
+    left: 8rem;
+    line-height: 7rem;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+#jumbotron-btn {
+    font-family: $font-display;
+    background: white;
+    color: $color-black;
+    border-radius: 0;
+    padding: .5rem 1.5rem;
+    border: none;
+}
+
+#jumbotron-btn:hover{
+    font-family: $font-display;
+    background: $color-black;
+    color:white; 
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    
+}
+
+// PRODUCT CARD GRID //
+
+img.card-img-top {
+    border: none;
+    border-radius: 0;
+}
+
+div.product-card {
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+div.card-body {
+    line-height: .2rem;
+}
+
+div.quick-view-overlay p {
+    position: absolute; 
+    top: 15rem; 
+    left: 0;
+    background:white;
+    background: rgba(255, 255, 255, 0.5); /* Black see-through */
+    color: $color-black; 
+    width: 100%;
+    opacity:0;
+    color: $color-black;
+    font-size: .7rem;
+    padding: 0rem 2rem;
+    text-align: center;
+    display: none;
+    z-index: 5;
+}
+
+div.quick-view-overlay img {
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    display: none;
+    z-index: 0;
+    width: 18rem; 
+    height: 18rem
+}
+
+div.col:hover .quick-view-overlay p, 
+div.col:hover .quick-view-overlay img {
+    opacity: 1;
+    display: block;
+}
+
 
 // FOOTER //
 footer {
