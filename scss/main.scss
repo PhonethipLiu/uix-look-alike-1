@@ -12,7 +12,7 @@ $font-serif: 'PT Serif', serif;
 
 // GRID //
 $grid-columns: 12 !default;
-$grid-gutter-width: 20px !default;
+$grid-gutter-width: 10px !default;
 
 // MAIN BODY ELEMENTS //
 body {
@@ -34,7 +34,10 @@ main.main-wrapper {
     align-content: auto;
 }
 
-// BUTTONS //
+li {
+    margin: 0;
+    padding: 0;
+}
 
 // NAV //
 .navbar {
@@ -77,6 +80,7 @@ h1 {
     color: $color-black;
     letter-spacing: .05rem;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 h1.display-4 {
@@ -84,14 +88,12 @@ h1.display-4 {
     font-weight: 400; 
     font-size: 3rem;
     color: white;
-    
 }
 
 h1.display-4 span {
     font-family: $font-serif;
     color: white;
     font-size: 3rem;
-    
 }
 
 h2.section-heds {
@@ -114,10 +116,25 @@ h3 span {
 
 h5 {
     font-family: $font-display;
-    font-weight: 400;
-    font-size: .9rem; 
+    font-weight: 300;
+    font-size: .8rem; 
     text-transform: uppercase;
-    // padding-bottom: 1rem;
+}
+
+h4.box {
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: .8rem; 
+    text-transform: uppercase;
+    text-align: center;
+    width: 10rem;
+    height: auto;
+    padding: .5rem 1rem;
+    border: 1px solid $color-black;
+    position: absolute; 
+    left: 45%;
+    background-color: white;
+    justify-content: center !important;
 }
 
 h6.kicker {
@@ -131,15 +148,39 @@ h6.kicker {
 // SECTION ELEMENTS //
 section.section-wrapper-grey {
     background-color: $color-lite-grey;
-    padding: 3rem;  
+    padding: 5rem 7rem 1rem 7rem;  
     text-align: center;
+    align-content: center;
+    justify-content: center;
 }
 
 section.section-wrapper-white {
     background-color: white;
-    padding: 5rem 6rem 3rem 6rem;  
+    padding: 5rem 7rem;  
     text-align: center;
     line-height: 3rem;
+    // align-content: center;
+    justify-content: space-between;
+}
+
+hr.section-rule {
+    border-color: $color-black;
+    position: relative; 
+    top: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+// BIO PAGE //
+div.bio {
+    margin: 4rem 10rem;
+    justify-content: auto;
+    width: 50%;
+}
+
+.bio img {
+    border-radius: 50%;
+    margin-bottom: 3rem;
 }
 
 // JUMBOTRON ELEMENTS //
@@ -173,11 +214,30 @@ div.jumbotron-textbox{
     color:white; 
     border-radius: 0;
     padding: 1rem 1.5rem;
-    
 }
 
-// PRODUCT CARD GRID //
+// PRODUCT CARD CONTAINER //
+.container product-grid {
+    justify-content: auto;
+}
 
+// PRODUCT CARD ROW //
+div.row.cookies {
+    padding-bottom: 2rem !important;
+    // grid-column-gap: 1px;
+}
+
+div.col.product {
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
+    align-content: space-between;
+    width: 320px;
+    justify-content: center;
+    height: auto;
+}
+
+// PRODUCT CARD ITEM //
 img.card-img-top {
     border: none;
     border-radius: 0;
@@ -187,6 +247,8 @@ div.product-card {
     border: none;
     border-radius: 0;
     position: relative;
+    margin-bottom: 1rem;
+    align-self: auto;
 }
 
 div.card-body {
@@ -195,7 +257,7 @@ div.card-body {
 
 div.quick-view-overlay p {
     position: absolute; 
-    top: 15rem; 
+    top: 17rem; 
     left: 0;
     background:white;
     background: rgba(255, 255, 255, 0.5); /* Black see-through */
@@ -231,18 +293,26 @@ div.col:hover .quick-view-overlay img {
 
 // FOOTER //
 footer {
-    background-color: $color-pink;
     padding: 4rem 6rem;
-    margin-top: .3rem;
     font-size: .75rem;
 }
 
-ul.footer-item {
+div.footer-wrapper {
+    background-color: $color-pink;
     list-style-type: none;
-    margin: 0;
+    margin-top: .3rem;
+    padding: 5rem 7rem;
+    line-height: 1.5rem;
+}
+
+ul.footer-item {
+    background-color: $color-pink;
+    list-style-type: none;
+    margin: 0 ;
     padding: 0;
     line-height: 1.5rem;
 }
+
 div.copyright-footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
